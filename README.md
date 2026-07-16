@@ -3,6 +3,18 @@
 A cru implementation for
 [Zebra Browser Print](https://www.zebra.com/us/en/support-downloads/software/printer-software/browser-print.html).
 
+## Installations
+
+Clone this repository and run `make install`:
+
+```bash
+git clone https://github.com/not-Ryan/zebra-browser-print-linux.git
+make install
+```
+
+See [`install` recipe in makefile](./makefile) for the manual installation
+instructions.
+
 ### Why!?
 
 Because Zebra doesn't easily provide the Linux drivers for Zebra Browser Print.
@@ -21,5 +33,7 @@ printf "^XA\n^PW400\n^LL400\n^FO10,10^GB80,80,3^FS\n^FO10,100^A0N,25,25^FD10mm@2
   | lp -d <your-printer-name> -o raw -
 ```
 
-I got this command from another
-[Github here](https://github.com/boberbyte/zebra-gk420d-linux)
+I got this command and idea from another
+[repository](https://github.com/boberbyte/zebra-gk420d-linux)
+
+Then we spin up a server and just listen for commands.

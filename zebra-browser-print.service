@@ -1,0 +1,11 @@
+[Unit]
+Description=Zebra Browser Print
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/zebra-browser-print
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

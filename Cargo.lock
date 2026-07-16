@@ -781,12 +781,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "serve"
-version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9bfe5a98af5ca040487539724a7b7fee23549a4501d2553e5d60dc839c75eaa3"
-
-[[package]]
 name = "signal-hook-registry"
 version = "1.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1090,7 +1084,6 @@ dependencies = [
  "hyper-util",
  "serde",
  "serde_json",
- "serve",
  "tokio",
  "tower-http",
 ]

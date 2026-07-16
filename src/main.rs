@@ -1,8 +1,5 @@
-use std::io::Error;
-
 use axum::{
     Json, Router,
-    http::StatusCode,
     routing::{get, post},
 };
 use tower_http::cors::{Any, CorsLayer};
