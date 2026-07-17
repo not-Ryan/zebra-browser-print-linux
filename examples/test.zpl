@@ -1,13 +1,8 @@
 ^XA
-^FX All the reset commands here ^FS
-^LH0,0
-^LS0
-^LT0
-^PON
-^CF0,120,100
-^FX Everything else here ^FS
-^FO0,0^GC60,2^FS
-^FO100,0^GC60,2^FS
-^FO0,100^GC60,2^FS
-^FO100,50^FDHello world :)^FS
+^JMB
+^PW2102
+^LL827
+^FO0,0^B0N,10,N,104,N,1^FDITEM-def^FS
+^FO280,0^AV^FDBold bolt^FS
+^FO280,80^AS^FB780,4^FDBolt created by extreme mockery^FS
 ^XZ

@@ -1,0 +1,6 @@
+{
+  "zplToolchain.themePreset": "custom",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  }
+}

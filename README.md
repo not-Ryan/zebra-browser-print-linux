@@ -10,6 +10,9 @@ Clone this repository and run `make install`:
 ```bash
 git clone https://github.com/not-Ryan/zebra-browser-print-linux.git
 make install
+# Give access to regular users to use the usb
+echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="0a5f", MODE="0666"' | sudo tee /etc/udev/rules.d/99-zebra.rules
+sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 See [`install` recipe in makefile](./makefile) for the manual installation
